@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="footer-icon">
-                Create By Ezo Service &copy; <?php echo date("Y"); ?>
+                Create By Ezzo Service &copy; <?php echo date("Y"); ?>
             </div>
         </div>
     </footer>
