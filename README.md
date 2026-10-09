@@ -12,7 +12,8 @@
    ```sql
    CREATE DATABASE azouz_bookstore CHARACTER SET utf8mb4;
    ```
-   ثم استورد نسختك من القاعدة (لا يوجد ملف `.sql` مرفق — صدّرها من جهازك بـ phpMyAdmin ← تصدير).
+   ثم استورد ملف `azouz_bookstore.sql`:
+   - phpMyAdmin ← استيراد ← `azouz_bookstore.sql`
 3. إعداد الاتصال في `includes/conect.php` و `admin/includes/temp/conect.php` (الوضع الافتراضي: `root` بدون كلمة سر)
 4. تثبيت المكتبات:
    ```bash
