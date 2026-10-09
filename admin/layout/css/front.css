@@ -1,0 +1,113 @@
+/* Start Ganaral Page*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing : border-box;
+}
+
+
+a{
+    text-decoration: none;
+    color: #141313;
+}
+
+ul{
+    direction: rtl;
+    list-style-type: none;
+}
+
+body{
+    direction: rtl;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* End Ganaral Page*/
+
+/* Start Header Page */
+  
+  header {
+    color: #212020;
+    padding: 20px 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  
+  header img{
+    width: 90%;
+  }
+  
+
+  .menuHader {
+    text-align: -webkit-left;
+    position: relative;
+  }
+  /* End Header Page */
+
+
+  /* Start Footer Page */
+.footer-icon {
+    color: #141313;
+    font-size: bold;
+    text-align: center;
+    
+}
+
+/* End Footer Page */
+
+  /* Start Navbar Page */
+
+  .header_title {
+    background-color: #2196f3;
+  }
+
+  .header_title ul li a{
+    color: #eee;
+    font-size: 20px;
+    margin-left: auto;
+}
+
+.header_title ul li a:active{
+    color: #212020;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+/* End Navbar Page */
+
+/* Start Login Page */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.login{
+    width: 90%;
+    background-color: #141313;
+}
+
+.input_cont {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    width: 90%;
+}
+
+.input_cont .form-control {
+    border-radius: 10px 0 0 10px;
+}
+
+.input_cont .asterisk {
+    color: red;
+    font-size: 20px;
+}
+
+/* End Login Page */
