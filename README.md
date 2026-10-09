@@ -12,15 +12,20 @@
    ```sql
    CREATE DATABASE azouz_bookstore CHARACTER SET utf8mb4;
    ```
-   ثم استورد ملف `azouz_bookstore.sql`:
+   ثم استورد ملف `azouz_bookstore.sql` (هيكل الجداول فقط، بدون بيانات):
    - phpMyAdmin ← استيراد ← `azouz_bookstore.sql`
-3. إعداد الاتصال في `includes/conect.php` و `admin/includes/temp/conect.php` (الوضع الافتراضي: `root` بدون كلمة سر)
-4. تثبيت المكتبات:
+3. أنشئ حساب إدارة تجريبي:
+   ```sql
+   INSERT INTO `admin` (`userName`, `Password`) VALUES ('admin', SHA1('admin123'));
+   ```
+   ثم ادخل للوحة الإدارة بـ `admin / admin123`
+4. إعداد الاتصال في `includes/conect.php` و `admin/includes/temp/conect.php` (الوضع الافتراضي: `root` بدون كلمة سر)
+5. تثبيت المكتبات:
    ```bash
    composer install
    ```
    (المجلد `vendor/` مستبعد من Git قصداً)
-5. افتح: `http://localhost/ezoService/index.php`
+6. افتح: `http://localhost/ezoService/index.php`
 
 ## إرسال SMS (Twilio) — اختياري
 صفحة `admin/send_sms.php` فقط تحتاجه. اضبط متغيرات البيئة:
